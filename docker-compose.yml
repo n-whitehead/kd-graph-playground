@@ -33,6 +33,7 @@ services:
   jupyter-lab:
     build:
       context: ./jupyter-lab
+#      dockerfile: Dockerfile.python
     container_name: playground-jupyter
     links:
       - neo4j:neo4j

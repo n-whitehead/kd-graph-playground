@@ -133,3 +133,6 @@ dmypy.json
 
 # Docker specific
 neo4j/data/*
+
+# Cert
+*.crt

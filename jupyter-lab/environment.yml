@@ -1,0 +1,9 @@
+name: kd-graph-playground-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7
+  - py2neo=4.2.0
+  - neo4j-python-driver=4.1.1
+#  - pip:
+#    - ampligraph=1.3.2
