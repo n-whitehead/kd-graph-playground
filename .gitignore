@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# IntelliJ
+**/.idea
+
+# Docker specific
+neo4j/data/
