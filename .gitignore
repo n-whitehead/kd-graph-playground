@@ -138,5 +138,5 @@ dmypy.json
 
 docker/neo4j/data/*
 
-# Remove this, download crt instead
-.crt
+# TODO: Remove this, download crt instead
+*.crt
