@@ -130,9 +130,10 @@ dmypy.json
 
 # IntelliJ
 **/.idea
-
-# Docker specific
-neo4j/data/*
+*.iml
 
 # Cert
-*.crt
+**/*.crt
+
+
+docker/neo4j/data/*
