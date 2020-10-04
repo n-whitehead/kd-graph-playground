@@ -1,2 +1,0 @@
-CREATE CONSTRAINT ON (node:`Article`) ASSERT node.`ID` IS UNIQUE;
-CREATE CONSTRAINT ON (node:`Person`) ASSERT node.`ID` IS UNIQUE;
