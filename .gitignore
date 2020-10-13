@@ -132,11 +132,7 @@ dmypy.json
 **/.idea
 *.iml
 
-# Cert
-**/*.crt
-
-
-docker/neo4j/data/*
+**/data/
 
 # TODO: Remove this, download crt instead
 **/*.crt

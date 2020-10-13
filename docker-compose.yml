@@ -7,40 +7,29 @@ networks:
 services:
   neo4j:
     image: neo4j:4.1.1
-    container_name: playground-neo4j
+    container_name: neo4j
     ports:
       - "7474:7474"
       - "7687:7687"
     volumes:
-      - ./docker/neo4j/data:/var/lib/neo4j/data
-      - ./docker/neo4j/plugins:/var/lib/neo4j/plugins
-      - ./docker/neo4j/conf:/var/lib/neo4j/conf
-      - ./docker/neo4j/import:/var/lib/neo4j/import
+      - ./images/neo4j/data:/var/lib/neo4j/data
+      - ./images/neo4j/plugins:/var/lib/neo4j/plugins
+      - ./images/neo4j/conf:/var/lib/neo4j/conf
+      - ./images/neo4j/import:/var/lib/neo4j/import
     environment:
       - NEO4J_AUTH=none
-      - NEO4J_apoc_export_file_enabled=true
-      - NEO4J_apoc_import_file_enabled=true
-      - NEO4J_dbms_security_procedures_unrestricted=apoc.*
-      - NEO4J_dbms_memory_heap_initial__size=512m
-      - NEO4J_dbms_memory_heap_max__size=4G
-      - NEO4J_apoc_uuid_enabled=true
-      - NEO4J_dbms_default__listen__address=0.0.0.0
-      - NEO4J_dbms_allow__upgrade=true
-      - NEO4J_dbms_default__database=neo4j
-      - NEO4J_dbms_security_auth__enabled=false
-      - NEO4J_dbms_directories_import=import
     networks:
       - playground-network
 
   notebook:
     build:
-      context: docker/jupyter-lab
-    container_name: playground-jupyter
+      context: images/jupyter
+    container_name: jupyter-notebook
     links:
       - neo4j:neo4j
     ports:
       - "8888:8888"
     volumes:
-      - ./docker/jupyter-lab/notebooks:/playground/notebooks
+      - ./images/jupyter/notebooks:/playground/notebooks
     networks:
       - playground-network
