@@ -1,0 +1,65 @@
+<rdf:RDF xmlns:bam="http://www.elsevier.com/xml/schema/rdf/BasicAssetMetadata-1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:pav="http://purl.org/swan/pav/provenance/" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rgn="http://www.elsevier.com/xml/schema/rdf/LDR-Satellite/Regions-1/" xmlns:sat="http://www.elsevier.com/xml/schema/rdf/LDR-Satellites/Base-1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:tag="http://www.elsevier.com/xml/schema/rdf/LDR-Satellites/TagAnnot-1/" xmlns:ecm="http://www.elsevier.com/xml/schema/rdf/common/Metadata-1/" xmlns:pmi="http://prismstandard.org/namespaces/pmi/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <sat:Satellite rdf:about="http://data.elsevier.com/metadata/BAM-1/pii:S0147956317302236">
+      <sat:describesResource rdf:resource="http://vtw.elsevier.com/content/pii/S0147956317302236"/>
+      <sat:describesResource rdf:resource="http://api.elsevier.com/content/article/DOI:10.1016/j.hrtlng.2017.10.007"/>
+      <sat:describesResource rdf:resource="http://api.elsevier.com/content/article/PII:S0147-9563(17)30223-6"/>
+      <sat:satellite-type rdf:resource="http://data.elsevier.com/namespaces/LDR-Satellites/BasicAssetMetadata-1/"/>
+      <sat:project rdf:resource="http://data.elsevier.com/enh-project/VTW"/>
+      <pav:createdBy rdf:resource="http://data.elsevier.com/enh-service/LDR-VTW-INT"/>
+      <pav:createdOn>2019-01-23T09:42:36Z</pav:createdOn>
+    </sat:Satellite>
+    <rdf:Description rdf:about="http://data.elsevier.com/metadata/BAM-1/pii:S0147956317302236">
+      <dct:title>Development of the Chinese-version of the exercise self-regulatory efficacy scale for patients with chronic obstructive pulmonary disease</dct:title>
+      <dct:isPartOf rdf:resource="http://vtw.elsevier.com/content/pii/S0147956317X00071"/>
+      <bam:orderedCreatorList>
+        <rdf:Seq>
+          <rdf:li>Yu-Han Tsai</rdf:li>
+          <rdf:li>Jyu-Lin Chen</rdf:li>
+          <rdf:li>Amy H.T. Davis</rdf:li>
+          <rdf:li>Wen-Jiuan Yen</rdf:li>
+          <rdf:li>Yen-Ju Lin</rdf:li>
+          <rdf:li>Li-Chi Chiang</rdf:li>
+          <rdf:li>Yu-Ju Chen</rdf:li>
+        </rdf:Seq>
+      </bam:orderedCreatorList>
+      <dct:creator>Yu-Han Tsai</dct:creator>
+      <dct:creator>Jyu-Lin Chen</dct:creator>
+      <dct:creator>Amy H.T. Davis</dct:creator>
+      <dct:creator>Wen-Jiuan Yen</dct:creator>
+      <dct:creator>Yen-Ju Lin</dct:creator>
+      <dct:creator>Li-Chi Chiang</dct:creator>
+      <dct:creator>Yu-Ju Chen</dct:creator>
+      <dct:date>2017-11-11</dct:date>
+      <dct:modified>2017-10-27T00:00:00Z</dct:modified>
+      <dct:created>2017-05-23T00:00:00Z</dct:created>
+      <dct:publisher>Elsevier Inc.</dct:publisher>
+      <dct:language>en</dct:language>
+      <dct:type rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1"/>
+      <dct:abstract>Abstract Background A valid and reliable instrument for assessing exercise self-regulatory efficacy (Ex-SRE) is lacking in Taiwan. Objective To develop and validate a Chinese-version of the Ex-SRE scale ( Ex-SRES-Chinese ). Methods Published guidelines were followed for cross-cultural adaptation of Ex-SRES-Chinese . Psychometric testing was conducted in 76 subjects with chronic obstructive pulmonary diseases (COPD). Results Ex-SRES-Chinese achieved clarity, culture appropriateness, and functional equivalence for measuring Ex-SRE. The scale-level content validity index of the Ex-SRES-Chinese was 0.99. The internal consistency reliability (Cronbach's α) was 0.925. Factor analysis identified a single factor with a high eigenvalue of 7.6 accounting for 47.5% of the total variance. The construct validity of Ex-SRES-Chinese was supported by higher Ex-SRE in subjects who exercise regularly in the past than those who did not ( p  = 0.033). In addition, Ex-SRE was positively associated with weekly exercise time ( r =  0.58; p &amp;lt;  0.0001). Conclusions Ex-SRES-Chinese is a useful cross-culturally adapted instrument with good psychometric properties for measuring Ex-SRE in COPD patients in Taiwan.</dct:abstract>
+      <bam:year>2017</bam:year>
+      <bam:subtype rdf:resource="http://data.elsevier.com/vocabulary/ElsevierPubItemTypes/FLA"/>
+      <prism:copyright>Elsevier Inc.</prism:copyright>
+      <prism:publicationName>Heart &amp; Lung</prism:publicationName>
+      <prism:issn>0147-9563</prism:issn>
+      <prism:aggregationType rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1"/>
+      <prism:coverDisplayDate>January - February 2018</prism:coverDisplayDate>
+      <prism:volume>47</prism:volume>
+      <prism:number>1</prism:number>
+      <prism:pageRange>16–23</prism:pageRange>
+      <prism:startingPage>16</prism:startingPage>
+      <prism:endingPage>23</prism:endingPage>
+      <prism:keyword>Exercise self-regulatory efficacy</prism:keyword>
+      <prism:keyword>Cross-cultural adaptation</prism:keyword>
+      <prism:keyword>Psychometrics</prism:keyword>
+      <prism:keyword>Translation</prism:keyword>
+      <prism:keyword>Instrument</prism:keyword>
+      <dct:description>A valid and reliable instrument for assessing exercise self-regulatory efficacy (Ex-SRE) is lacking in Taiwan. To develop and validate a Chinese-version of the Ex-SRE scale ( Ex-SRES-Chinese ). Publis…</dct:description>
+      <prism:channel rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1.1"/>
+      <ecm:identifier>pii:S0147956317302236</ecm:identifier>
+      <dct:identifier>HL_2017_150</dct:identifier>
+      <bam:formattedPII>S0147-9563(17)30223-6</bam:formattedPII>
+      <prism:doi>10.1016/j.hrtlng.2017.10.007</prism:doi>
+      <bam:publicationTimeStart>2018-01-01T00:00:00Z</bam:publicationTimeStart>
+      <bam:publicationTimeEnd>2018-02-28T23:59:59Z</bam:publicationTimeEnd>
+    </rdf:Description>
+  </rdf:RDF>

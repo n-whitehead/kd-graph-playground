@@ -1,0 +1,70 @@
+<rdf:RDF xmlns:bam="http://www.elsevier.com/xml/schema/rdf/BasicAssetMetadata-1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:pav="http://purl.org/swan/pav/provenance/" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rgn="http://www.elsevier.com/xml/schema/rdf/LDR-Satellite/Regions-1/" xmlns:sat="http://www.elsevier.com/xml/schema/rdf/LDR-Satellites/Base-1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:tag="http://www.elsevier.com/xml/schema/rdf/LDR-Satellites/TagAnnot-1/" xmlns:ecm="http://www.elsevier.com/xml/schema/rdf/common/Metadata-1/" xmlns:pmi="http://prismstandard.org/namespaces/pmi/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <sat:Satellite rdf:about="http://data.elsevier.com/metadata/BAM-1/pii:S0014489417304253">
+      <sat:describesResource rdf:resource="http://vtw.elsevier.com/content/pii/S0014489417304253"/>
+      <sat:describesResource rdf:resource="http://api.elsevier.com/content/article/DOI:10.1016/j.exppara.2017.10.012"/>
+      <sat:describesResource rdf:resource="http://api.elsevier.com/content/article/PII:S0014-4894(17)30425-3"/>
+      <sat:satellite-type rdf:resource="http://data.elsevier.com/namespaces/LDR-Satellites/BasicAssetMetadata-1/"/>
+      <sat:project rdf:resource="http://data.elsevier.com/enh-project/VTW"/>
+      <pav:createdBy rdf:resource="http://data.elsevier.com/enh-service/LDR-VTW-INT"/>
+      <pav:createdOn>2019-01-22T07:26:22Z</pav:createdOn>
+    </sat:Satellite>
+    <rdf:Description rdf:about="http://data.elsevier.com/metadata/BAM-1/pii:S0014489417304253">
+      <dct:title>In vitro amoebicidal and antioxidant activities of some Tunisian seaweeds</dct:title>
+      <dct:isPartOf rdf:resource="http://vtw.elsevier.com/content/pii/S0014489417X00118"/>
+      <bam:orderedCreatorList>
+        <rdf:Seq>
+          <rdf:li>Olfa Chiboub</rdf:li>
+          <rdf:li>Leila Ktari</rdf:li>
+          <rdf:li>Ines Sifaoui</rdf:li>
+          <rdf:li>Atteneri López-Arencibia</rdf:li>
+          <rdf:li>Maria Reyes-Batlle</rdf:li>
+          <rdf:li>Mondher Mejri</rdf:li>
+          <rdf:li>Basilio Valladares</rdf:li>
+          <rdf:li>Manef Abderrabba</rdf:li>
+          <rdf:li>José E. Piñero</rdf:li>
+          <rdf:li>Jacob Lorenzo-Morales</rdf:li>
+        </rdf:Seq>
+      </bam:orderedCreatorList>
+      <dct:creator>Olfa Chiboub</dct:creator>
+      <dct:creator>Leila Ktari</dct:creator>
+      <dct:creator>Ines Sifaoui</dct:creator>
+      <dct:creator>Atteneri López-Arencibia</dct:creator>
+      <dct:creator>Maria Reyes-Batlle</dct:creator>
+      <dct:creator>Mondher Mejri</dct:creator>
+      <dct:creator>Basilio Valladares</dct:creator>
+      <dct:creator>Manef Abderrabba</dct:creator>
+      <dct:creator>José E. Piñero</dct:creator>
+      <dct:creator>Jacob Lorenzo-Morales</dct:creator>
+      <dct:date>2017-11-02</dct:date>
+      <dct:modified>2017-10-29T00:00:00Z</dct:modified>
+      <dct:created>2017-07-24T00:00:00Z</dct:created>
+      <dct:publisher>Elsevier Inc.</dct:publisher>
+      <dct:language>en</dct:language>
+      <dct:type rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1"/>
+      <dct:abstract>Abstract Free-living amoebae of genus Acanthamoeba are opportunistic pathogens widely distributed in the environment, and are the causative agents of several humans’ infections, such as Acanthamoeba keratitis, Granulomatous Amoebic Encephalitis and also disseminated infections. The existence of the cyst stage complicates Acanthamoeba therapy as it is highly resistant to antibiotics and physical agents. All these facts reinforced the necessity to find and develop an effective therapy against Acanthamoeba infections. In the present study, we are interested to several seaweeds species collected from the Tunisian coasts and belonging to the 3 phyla (brown, green and red algae). The aim was to quantify the Total Phenolic Compounds in different organic extract, to evaluate antioxidant capacity (DPPH and ABTS) and to study the antiprotozoal activity against A. castellanii Neff. The parasites have been inhibited by all extracts with an IC50 ranged from 52,3 ± 1.8 μg/mL for ethyl acetate extract, to 134,6 ± 0.7 μg/mL for the hexanic one for the various species studied.</dct:abstract>
+      <bam:year>2017</bam:year>
+      <bam:subtype rdf:resource="http://data.elsevier.com/vocabulary/ElsevierPubItemTypes/FLA"/>
+      <prism:publicationName>Experimental Parasitology</prism:publicationName>
+      <prism:issn>0014-4894</prism:issn>
+      <prism:aggregationType rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1"/>
+      <prism:coverDisplayDate>December 2017</prism:coverDisplayDate>
+      <prism:volume>183</prism:volume>
+      <prism:pageRange>76–80</prism:pageRange>
+      <prism:startingPage>76</prism:startingPage>
+      <prism:endingPage>80</prism:endingPage>
+      <prism:keyword>Tunisian seaweeds</prism:keyword>
+      <prism:keyword>Biological activity</prism:keyword>
+      <prism:keyword>Antiparasitic activity</prism:keyword>
+      <prism:keyword>Acanthamoeba</prism:keyword>
+      <prism:keyword>Antioxidant capacity</prism:keyword>
+      <dct:description>Free-living amoebae of genus Acanthamoeba are opportunistic pathogens widely distributed in the environment, and are the causative agents of several humans’ infections, such as Acanthamoeba keratitis,…</dct:description>
+      <prism:channel rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1.1"/>
+      <ecm:identifier>pii:S0014489417304253</ecm:identifier>
+      <dct:identifier>EP_2017_314</dct:identifier>
+      <bam:formattedPII>S0014-4894(17)30425-3</bam:formattedPII>
+      <prism:doi>10.1016/j.exppara.2017.10.012</prism:doi>
+      <bam:publicationTimeStart>2017-12-01T00:00:00Z</bam:publicationTimeStart>
+      <bam:publicationTimeEnd>2017-12-31T23:59:59Z</bam:publicationTimeEnd>
+      <bam:hasCommonGroup>IG000022</bam:hasCommonGroup>
+    </rdf:Description>
+  </rdf:RDF>

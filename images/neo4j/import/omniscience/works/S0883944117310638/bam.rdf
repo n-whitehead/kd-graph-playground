@@ -1,0 +1,72 @@
+<rdf:RDF xmlns:bam="http://www.elsevier.com/xml/schema/rdf/BasicAssetMetadata-1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:pav="http://purl.org/swan/pav/provenance/" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rgn="http://www.elsevier.com/xml/schema/rdf/LDR-Satellite/Regions-1/" xmlns:sat="http://www.elsevier.com/xml/schema/rdf/LDR-Satellites/Base-1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:tag="http://www.elsevier.com/xml/schema/rdf/LDR-Satellites/TagAnnot-1/" xmlns:ecm="http://www.elsevier.com/xml/schema/rdf/common/Metadata-1/" xmlns:pmi="http://prismstandard.org/namespaces/pmi/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <sat:Satellite rdf:about="http://data.elsevier.com/metadata/BAM-1/pii:S0883944117310638">
+      <sat:describesResource rdf:resource="http://vtw.elsevier.com/content/pii/S0883944117310638"></sat:describesResource>
+      <sat:describesResource rdf:resource="http://api.elsevier.com/content/article/DOI:10.1016/j.jcrc.2017.11.018"></sat:describesResource>
+      <sat:describesResource rdf:resource="http://api.elsevier.com/content/article/PII:S0883-9441(17)31063-8"></sat:describesResource>
+      <sat:satellite-type rdf:resource="http://data.elsevier.com/namespaces/LDR-Satellites/BasicAssetMetadata-1/"></sat:satellite-type>
+      <sat:project rdf:resource="http://data.elsevier.com/enh-project/VTW"></sat:project>
+      <pav:createdBy rdf:resource="http://data.elsevier.com/enh-service/LDR-VTW-INT"></pav:createdBy>
+      <pav:createdOn>2019-05-01T21:47:41Z</pav:createdOn>
+    </sat:Satellite>
+    <rdf:Description rdf:about="http://data.elsevier.com/metadata/BAM-1/pii:S0883944117310638">
+      <dct:title>Patterns of C-reactive protein ratio response to antibiotics in pediatric sepsis: A prospective cohort study</dct:title>
+      <dct:isPartOf rdf:resource="http://vtw.elsevier.com/content/pii/S0883944117X00075"></dct:isPartOf>
+      <bam:orderedCreatorList>
+        <rdf:Seq>
+          <rdf:li>Vanessa Soares Lanziotti</rdf:li>
+          <rdf:li>Pedro Póvoa</rdf:li>
+          <rdf:li>Arnaldo Prata-Barbosa</rdf:li>
+          <rdf:li>Lucas Berbet Pulcheri</rdf:li>
+          <rdf:li>Ligia S.C.F. Rabello</rdf:li>
+          <rdf:li>José Roberto Lapa e Silva</rdf:li>
+          <rdf:li>Marcio Soares</rdf:li>
+          <rdf:li>Jorge I.F. Salluh</rdf:li>
+        </rdf:Seq>
+      </bam:orderedCreatorList>
+      <dct:creator>Vanessa Soares Lanziotti</dct:creator>
+      <dct:creator>Pedro Póvoa</dct:creator>
+      <dct:creator>Arnaldo Prata-Barbosa</dct:creator>
+      <dct:creator>Lucas Berbet Pulcheri</dct:creator>
+      <dct:creator>Ligia S.C.F. Rabello</dct:creator>
+      <dct:creator>José Roberto Lapa e Silva</dct:creator>
+      <dct:creator>Marcio Soares</dct:creator>
+      <dct:creator>Jorge I.F. Salluh</dct:creator>
+      <dct:date>2017-11-11</dct:date>
+      <dct:modified>2017-11-01T02:50:48.000Z</dct:modified>
+      <dct:created>2017-07-20T00:00:00Z</dct:created>
+      <dct:publisher>Elsevier Inc.</dct:publisher>
+      <dct:language>en</dct:language>
+      <dct:type rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1"></dct:type>
+      <dct:abstract>Abstract Purpose Evaluate sequential C-reactive protein (CRP) measurements and patterns of CRP-ratio response to antibiotic therapy during first 7 days in Pediatric Intensive Care Unit (PICU) of septic children. Methods Prospective, cohort study of children (1 month-12 years) admitted at 3 PICUs, with diagnosis of sepsis with &amp;lt; 72 h course. CRP-ratio was calculated in relation to D0_CRP value. Children were classified according to an individual pattern of CRP-ratio response: fast – CRP_D4 of therapy was &amp;lt; 0.4 of D0_CRP; slow – continuous but slow decrease of CRP; non – CRP remained ≥ 0.8 of D0_CRP; biphasic – initial CRP decrease to levels &amp;lt; 0.8 of D0_CRP followed by secondary rise ≥ 0.8. Results 103 septic children (age-median: 2 yrs; 54% male) were prospectively included (infection focus: 65% respiratory, 12.5% central nervous system). Overall PICU mortality was 11.7%. 102 children could be classified according to a predefined CRP-ratio response pattern. Time-dependent analysis of CRP-ratio and CRP course of the different patterns were significantly different. Besides, PICU mortality rate was significantly different according CRP-ratio response patterns: fast response 4.5%; slow response 5.8%; non-response 29.4%; biphasic response 42.8%. Conclusions In pediatric sepsis, CRP-ratio serial evaluation was useful in early identification of patients with poor outcome.</dct:abstract>
+      <bam:year>2017</bam:year>
+      <bam:subtype rdf:resource="http://data.elsevier.com/vocabulary/ElsevierPubItemTypes/FLA"></bam:subtype>
+      <prism:copyright>Elsevier Inc.</prism:copyright>
+      <prism:publicationName>Journal of Critical Care</prism:publicationName>
+      <prism:issn>0883-9441</prism:issn>
+      <prism:aggregationType rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1"></prism:aggregationType>
+      <prism:coverDisplayDate>April 2018</prism:coverDisplayDate>
+      <prism:volume>44</prism:volume>
+      <prism:pageRange>217–222</prism:pageRange>
+      <prism:startingPage>217</prism:startingPage>
+      <prism:endingPage>222</prism:endingPage>
+      <prism:keyword>CRP</prism:keyword>
+      <prism:keyword>CRPr</prism:keyword>
+      <prism:keyword>ICU</prism:keyword>
+      <prism:keyword>IEC</prism:keyword>
+      <prism:keyword>IQR</prism:keyword>
+      <prism:keyword>LOS</prism:keyword>
+      <prism:keyword>MV</prism:keyword>
+      <prism:keyword>PELOD</prism:keyword>
+      <prism:keyword>PICU</prism:keyword>
+      <dct:description>Evaluate sequential C-reactive protein (CRP) measurements and patterns of CRP-ratio response to antibiotic therapy during first 7 days in Pediatric Intensive Care Unit (PICU) of septic children. Prosp…</dct:description>
+      <prism:channel rdf:resource="http://data.elsevier.com/vocabulary/ElsevierContentTypes/1.1.1"></prism:channel>
+      <ecm:identifier>pii:S0883944117310638</ecm:identifier>
+      <dct:identifier>JCRC_2017_962</dct:identifier>
+      <bam:formattedPII>S0883-9441(17)31063-8</bam:formattedPII>
+      <prism:doi>10.1016/j.jcrc.2017.11.018</prism:doi>
+      <ecm:isFundedBy>https://vtw.elsevier.com/content/sponsor/501100003593</ecm:isFundedBy>
+      <ecm:isFundedBy>https://vtw.elsevier.com/content/sponsor/501100004586</ecm:isFundedBy>
+      <bam:publicationTimeStart>2018-04-01T00:00:00Z</bam:publicationTimeStart>
+      <bam:publicationTimeEnd>2018-04-30T23:59:59Z</bam:publicationTimeEnd>
+    </rdf:Description>
+  </rdf:RDF>
