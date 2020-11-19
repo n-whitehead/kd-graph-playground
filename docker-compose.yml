@@ -6,10 +6,12 @@ networks:
 
 services:
   neo4j:
-    image: neo4j:4.1.1
+    build:
+      context: neo4j
     container_name: neo4j
     ports:
       - "7474:7474"
+      - "7473:7473"
       - "7687:7687"
     volumes:
       - ./neo4j/data:/data
@@ -29,6 +31,6 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - ./images/jupyter/notebooks:/playground/notebooks
+      - ./jupyter/notebooks:/playground/notebooks
     networks:
       - playground-network

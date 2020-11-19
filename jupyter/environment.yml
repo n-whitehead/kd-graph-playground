@@ -1,6 +1,7 @@
 name: kd-playground
 channels:
   - conda-forge
+  - defaults
 dependencies:
   - pip
   - ipykernel
@@ -10,4 +11,5 @@ dependencies:
   - pandas
   - numpy
   - pip:
-      - py2neo=2020.0.0
+      - py2neo
+      - neo4j

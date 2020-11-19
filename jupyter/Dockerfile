@@ -1,6 +1,11 @@
-ARG IMAGE_VER=latest
-FROM jupyter/minimal-notebook:${IMAGE_VER}
+ARG JUPYTER_VERSION=latest
+FROM jupyter/minimal-notebook:${JUPYTER_VERSION}
 
+USER root
+
+##############################################################
+# MANDATORY FOR ZSCALER - Include Zscaler cert in /jupyter directory
+# Found here: https://confluence.cbsels.com/display/TEN/SSL+encryption%3A+Application%2C+Development+Environment%2C+and+Guest+OS+compatibility+requirements
 ##############################################################
 # Zscaler Root Intermediate CA Cert - THIS WILL BE REQUIRED FOR BUILDING & RUNNING ON RELX WINDOWS HOSTS!
 ARG ZSCALER_CA_CERT="ZscalerRootCertificate-2048-SHA256.crt"
@@ -19,6 +24,7 @@ RUN ls -latr ${ZSCALER_CA_PATH}/ && ls -latr ${REQUESTS_CA_BUNDLE} && update-ca-
 ARG CONDA_ENV=kd-playground
 
 # Build environment
+# conda update -n base conda
 COPY --chown=${NB_UID}:${NB_GID} environment.yml /home/${NB_USER}/tmp/
 RUN cd /home/${NB_USER}/tmp/ && \
     conda env create -p ${CONDA_DIR}/envs/${CONDA_ENV} -f environment.yml && \
@@ -44,3 +50,6 @@ WORKDIR /playground
 # Copy notebooks and conf scripts into the image
 COPY /notebooks /notebooks
 COPY /conf/jupyter_notebook_config.py /root/.jupyter/
+
+# Switch back to NB_User, not accidentally running on root.
+USER ${NB_USER}
