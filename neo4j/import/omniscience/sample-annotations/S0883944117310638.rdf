@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bam="http://www.elsevier.com/xml/schema/rdf/BasicAssetMetadata-1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ecm="http://www.elsevier.com/xml/schema/rdf/common/Metadata-1/" xmlns:ega="http://www.elsevier.com/xml/schema/rdf/Generic-Annotation-1/" xmlns:pav="http://purl.org/swan/pav/provenance/" xmlns:pmi="http://prismstandard.org/namespaces/pmi/1.0/" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:rgn="http://www.elsevier.com/xml/schema/rdf/LDR-Satellite/Regions-1/" xmlns:sat="http://www.elsevier.com/xml/schema/rdf/LDR-Satellites/Base-1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:tag="http://www.elsevier.com/xml/schema/rdf/LDR-Satellites/TagAnnot-1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:base="http://data.elsevier.com/annotation/SHL-2/Heliyon/PII:S0883944117310638" xsi:schemaLocation="http://www.elsevier.com/xml/schema/rdf/Generic-Annotation-1/ http://www.elsevier.com/xml/schema/rdf/Generic-Annotation-1/ega_v01.xsd">
+   <sat:Satellite rdf:about="http://data.elsevier.com/annotation/SHL-2/Heliyon/PII:S0883944117310638">
+      <sat:describesResource rdf:resource="http://vtw.elsevier.com/content/pii/S0883944117310638" />
+      <sat:satellite-type rdf:resource="http://data.elsevier.com/namespaces/LDR-Satellites/TagAnnot-2/" />
+      <sat:project rdf:resource="http://data.elsevier.com/enh-project/Heliyon" />
+      <pav:createdBy rdf:resource="http://data.elsevier.com/enh-service/LDR-VTW-INT" />
+      <pav:createdOn>2017-11-03T13:20:00Z</pav:createdOn>
+   </sat:Satellite>
+   <skos:ConceptScheme rdf:about="http://data.elsevier.com/vocabulary/OmniScience">
+      <dct:title />
+      <dct:rightsHolder>Elsevier</dct:rightsHolder>
+      <prism:versionIdentifier>1</prism:versionIdentifier>
+   </skos:ConceptScheme>
+   <rdf:Description rdf:about="http://vtw.elsevier.com/content/pii/S0883944117310638">
+      <ecm:isAssignedTo rdf:ID="stmt-1" rdf:resource="http://data.elsevier.com/vocabulary/OmniScience/Concept-189721095" />
+      <tag:relatedAnnotation>
+         <tag:TaggingAnnotation rdf:about="#stmt-1" />
+      </tag:relatedAnnotation>
+      <ecm:isAssignedTo rdf:ID="stmt-2" rdf:resource="http://data.elsevier.com/vocabulary/OmniScience/Concept-252578116" />
+      <tag:relatedAnnotation>
+         <tag:TaggingAnnotation rdf:about="#stmt-2" />
+      </tag:relatedAnnotation>
+   </rdf:Description>
+</rdf:RDF>
