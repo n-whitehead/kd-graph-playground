@@ -24,8 +24,8 @@ services:
     build:
       context: jupyter
     container_name: jupyter-lab
-#    links:
-#      - neo4j:neo4j
+    links:
+      - neo4j:neo4j
     ports:
       - "8888:8888"
     volumes:
