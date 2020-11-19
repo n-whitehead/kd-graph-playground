@@ -6,29 +6,26 @@ networks:
 
 services:
   neo4j:
-    image: neo4j:4.1.1-enterprise
+    image: neo4j:4.1.1
     container_name: neo4j
     ports:
       - "7474:7474"
       - "7687:7687"
     volumes:
-      - ./images/neo4j/data:/data
-      - ./images/neo4j/plugins:/plugins
-      - ./images/neo4j/conf:/conf
-      - ./images/neo4j/logs:/logs
-      - ./images/neo4j/import:/var/lib/neo4j/import
-    environment:
-      - NEO4J_AUTH=neo4j/test
-      - NEO4J_ACCEPT_LICENSE_AGREEMENT=yes
+      - ./neo4j/data:/data
+      - ./neo4j/plugins:/plugins
+      - ./neo4j/conf:/conf
+      - ./neo4j/logs:/logs
+      - ./neo4j/import:/import
     networks:
       - playground-network
 
-  notebook:
+  jupyter:
     build:
-      context: images/jupyter
-    container_name: jupyter-notebook
-    links:
-      - neo4j:neo4j
+      context: jupyter
+    container_name: jupyter-lab
+#    links:
+#      - neo4j:neo4j
     ports:
       - "8888:8888"
     volumes:

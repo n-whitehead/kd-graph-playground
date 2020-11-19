@@ -1,0 +1,13 @@
+name: kd-playground
+channels:
+  - conda-forge
+dependencies:
+  - pip
+  - ipykernel
+  - ipython
+  - jupyter
+  - jupyterlab
+  - pandas
+  - numpy
+  - pip:
+      - py2neo=2020.0.0

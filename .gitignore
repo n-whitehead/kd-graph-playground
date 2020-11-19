@@ -132,6 +132,8 @@ dmypy.json
 **/.idea
 *.iml
 
+# Neo4j
+**/logs/
 **/data/
 
 # TODO: Remove this, download crt instead
