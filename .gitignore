@@ -134,6 +134,7 @@ dmypy.json
 
 # Neo4j
 **/logs/
+**/data/
 
 # TODO: Remove this, download crt instead
 **/*.crt

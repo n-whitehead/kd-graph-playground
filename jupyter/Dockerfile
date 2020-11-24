@@ -27,6 +27,7 @@ ARG CONDA_ENV=kd-playground
 # conda update -n base conda
 COPY --chown=${NB_UID}:${NB_GID} environment.yml /home/${NB_USER}/tmp/
 RUN cd /home/${NB_USER}/tmp/ && \
+    conda update -n base conda && \
     conda env create -p ${CONDA_DIR}/envs/${CONDA_ENV} -f environment.yml && \
     conda clean --all -f -y
 
