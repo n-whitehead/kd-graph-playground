@@ -1,8 +1,8 @@
 ARG NEO4J_VERSION=4.1.1
-FROM neo4j:${NEO4J_VERSION}
+FROM neo4j:${NEO4J_VERSION}-enterprise
 
 ENV NEO4J_AUTH=none
-#ENV NEO4J_ACCEPT_LICENSE_AGREEMENT yes
+ENV NEO4J_ACCEPT_LICENSE_AGREEMENT yes
 
 # Copy dump files to be extracted
 COPY graphs /tmp/graphs

@@ -15,7 +15,6 @@ services:
       - "7687:7687"
     volumes:
       - ./neo4j/data:/data
-      - ./neo4j/backup:/backup
       - ./neo4j/plugins:/plugins
       - ./neo4j/conf:/conf
       - ./neo4j/logs:/logs
