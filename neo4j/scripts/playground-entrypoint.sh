@@ -2,12 +2,11 @@
 
 mkdir -p /data/databases /data/transactions
 
-for entry in /tmp/graphs/*.dump
-do
+for entry in /tmp/graphs/*.dump; do
   fileName=$(basename "$entry")
   dbName="${fileName%.*}"
-  echo "---- Importing [$fileName] ----"
-  neo4j-admin load --from=$entry --database=$dbName --force
+  echo "---- Importing [${fileName}] ----"
+  neo4j-admin load --from=${entry} --database=${dbName} --force
 done
 
 chown -R neo4j:neo4j /data

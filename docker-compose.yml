@@ -1,36 +1,40 @@
-version: '3'
-
-networks:
-  playground-network:
-    driver: bridge
+version: "3"
 
 services:
   neo4j:
     build:
       context: neo4j
-    container_name: neo4j
+    container_name: neo4j-playground
+    restart: unless-stopped
     ports:
-      - "7474:7474"
-      - "7473:7473"
-      - "7687:7687"
+      - "7474:7474" # HTTP
+      - "7687:7687" # Bolt
+    environment:
+      - NEO4J_AUTH=neo4j/test
+      - NEO4J_ACCEPT_LICENSE_AGREEMENT=yes
+      - NEO4JLABS_PLUGINS=["graph-data-science"] # NEO4JLABS_PLUGINS=["apoc", "graph-data-science", "n10s"]
     volumes:
       - ./neo4j/data:/data
-      - ./neo4j/plugins:/plugins
       - ./neo4j/conf:/conf
       - ./neo4j/logs:/logs
       - ./neo4j/import:/import
     networks:
       - playground-network
 
-  jupyter:
+  jupyterlab:
     build:
-      context: jupyter
-    container_name: jupyter-lab
-    links:
-      - neo4j:neo4j
+      context: jupyter-lab
+    container_name: jupyter-lab-playground
+    restart: unless-stopped
     ports:
       - "8888:8888"
     volumes:
-      - ./jupyter/notebooks:/playground/notebooks
+      - ./jupyter-lab/conf/jupyter_server_config.py:/etc/jupyter/jupyter_server_config.py
+      - ./jupyter-lab/notebooks:/playground/notebooks
+    links:
+      - neo4j
     networks:
       - playground-network
+
+networks:
+  playground-network:
