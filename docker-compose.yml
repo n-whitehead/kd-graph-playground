@@ -1,9 +1,10 @@
-version: "3"
+version: '3'
 
 services:
   neo4j:
     build:
-      context: neo4j
+      context: .
+      dockerfile: ./neo4j/Dockerfile
     container_name: neo4j-playground
     restart: unless-stopped
     ports:
@@ -12,7 +13,7 @@ services:
     environment:
       - NEO4J_AUTH=neo4j/test
       - NEO4J_ACCEPT_LICENSE_AGREEMENT=yes
-      - NEO4JLABS_PLUGINS=["graph-data-science"] # NEO4JLABS_PLUGINS=["apoc", "graph-data-science", "n10s"]
+      - NEO4JLABS_PLUGINS=["apoc", "graph-data-science", "n10s"]
     volumes:
       - ./neo4j/data:/data
       - ./neo4j/conf:/conf
@@ -21,15 +22,15 @@ services:
     networks:
       - playground-network
 
-  jupyterlab:
+  jupyter-lab:
     build:
-      context: jupyter-lab
+      context: .
+      dockerfile: ./jupyter-lab/Dockerfile
     container_name: jupyter-lab-playground
     restart: unless-stopped
     ports:
       - "8888:8888"
     volumes:
-      - ./jupyter-lab/conf/jupyter_server_config.py:/etc/jupyter/jupyter_server_config.py
       - ./jupyter-lab/notebooks:/playground/notebooks
     links:
       - neo4j
