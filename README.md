@@ -27,5 +27,5 @@ Start the container with
     $ docker-compose up
 
 which will mount the appropriate volumes to the container.
-    1. **Jupyter Lab**: Copy one of the addresses with an attached token from the docker-compose output into your browser to begin navigating the session.
-    2. **Neo4j**: Open `http://localhost:7474` for the Neo4j Desktop.
+* **Jupyter Lab**: Copy one of the addresses with an attached token from the docker-compose output into your browser to begin navigating the session.
+* **Neo4j**: Open `http://localhost:7474` for the Neo4j Desktop.
