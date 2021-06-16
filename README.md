@@ -6,7 +6,7 @@ This project aims to promote experimentation on a sample Knowledge Discovery (KD
 
 Clone this repository into your desired workspace:
 
-    $ git clone git@github.com:n-whitehead/kd-graph-playground.git
+    git clone git@github.com:n-whitehead/kd-graph-playground.git
 
 ### Downloading ZScaler Cert (Windows users only)
 
@@ -18,13 +18,13 @@ Download the [ZScaler Root Certificate](https://elsevier.atlassian.net/wiki/down
 
 In the root directory of this project, build the Docker service for this project:
 
-    $ docker compose build
+    docker compose build
 
 This will build the `jupyter-lab` and `neo4j` containers.
 
 Start the container with
 
-    $ docker-compose up
+    docker compose up
 
 which will mount the appropriate volumes to the container.
 * **Jupyter Lab**: Copy one of the addresses with an attached token from the docker-compose output into your browser to begin navigating the session.
