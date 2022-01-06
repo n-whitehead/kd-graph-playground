@@ -1,6 +1,7 @@
 version: '3'
 
 services:
+  # push image to ecr -> kubernetes
   neo4j:
     build:
       context: .
